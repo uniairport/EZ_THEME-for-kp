@@ -29,7 +29,7 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://frontend-api.nowhere.lat/api/v1'
+            'https://apiapi.kunpengjiasu.net/api/v1'
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -47,7 +47,7 @@ export const config  = {
 
     // 是否启用中间件代理API请求
     // 设置为true时，所有API请求将通过中间件转发
-    API_MIDDLEWARE_ENABLED: true,
+    API_MIDDLEWARE_ENABLED: false,
   
     //=======================================================
     // 中间件服务器URL (不含路径) 开源地址 https://github.com/codeman857/EZ-Encrypt-Middleware
@@ -64,7 +64,7 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: '云图',
+        siteName: 'Kun Peng Network',
         siteDescription: '云游无界，图揽天下。',
         // copyright会自动使用当前年份
         copyright: `© ${new Date().getFullYear()} Yun Tu. All Rights Reserved.`,
@@ -99,7 +99,7 @@ export const config  = {
         defaultTheme: 'dark',
 
         // 主题色 (16进制颜色值)
-        primaryColor: '#8CA0BC',
+        primaryColor: '#8D6C73',
 
         // 是否启用落地页 (true=启用, false=禁用)
         enableLandingPage: true // 默认启用
@@ -128,7 +128,7 @@ export const config  = {
             title: "请收藏最新永久官网",
 
             // 弹窗内容 (支持HTML)
-            content: `<p><strong>其余官网可能无法访问，请收藏 <a href="https://dashboard.nowhere.best" target="_blank" rel="noopener noreferrer">https://dashboard.nowhere.best</a> 为永久官网</strong></p>`,
+            content: `<p><strong>其余官网可能无法访问，请收藏 <a href="https://kunpengjiasu.com" target="_blank" rel="noopener noreferrer">https://kunpengjiasu.com</a> 为永久官网</strong></p>`,
 
             // 冷却时间（小时），在此时间内不会再次显示弹窗
             cooldownHours: 1,
@@ -449,7 +449,7 @@ export const config  = {
         // 邀请链接配置
         inviteLinkConfig: {
             // 链接模式：'auto'=自动使用当前站点域名，'custom'=使用自定义域名
-            linkMode: 'custom',
+            linkMode: 'auto',
             // 自定义域名，当linkMode为'custom'时使用
             customDomain: 'https://vip.ytjcok.org'
         }
